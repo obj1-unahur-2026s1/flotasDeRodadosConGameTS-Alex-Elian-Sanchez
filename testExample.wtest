@@ -1,9 +1,27 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "group of tests for tu rodados" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+method initialize() {
+  const deportes = new Dependencia(cantidadEmpleados= 45)
+  const cultura = new Dependencia(cantidadEmpleados= 31)
+  const cachito = new Corsa(color=rojo)
+  
+  deportes.agregarRodado(cachito)
+  deportes.agregarRodado(new Kwid(tanqueExtra=true))
+  deportes.agregarRodado(new AutoEspecial(capacidad=5,velocidadMaxima=160, peso=1200,color=beige))
+
+  cultura.agregarRodado(cachito)
+  cultura.agregarRodado(new Kwid(tanqueExtra=true))
+  cultura.agregarRodado(new Kwid(tanqueExtra=true))
+  cultura.agregarRodado(new Kwid(tanqueExtra=false))
+  trafic.cambiarInterior(comodo)
+  trafic.cambiarMotor(bataton)
+  cultura.agregarRodado(trafic)
+
+}
+  test "hola123" {
+    assert.equals(1,1)
   }
 
 }
